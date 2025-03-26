@@ -10,43 +10,44 @@ ProgrammingInCSharp/
 │   ├── BasicSyntax.cs
 │   ├── ControlStructures.cs
 │   └── VariablesAndDataTypes.cs
-├── 02-Data-Structures/
+├── 02-OOPs/
+│   ├── ClassesAndObjects.cs
+│   ├── InheritanceExample.cs
+│   ├── OOP-Concepts.md
+│   └── PolymorphismExample.cs
+├── 03-Searching-Algorithms/
+│   ├── BinarySearch.cs
+│   ├── LinearSearch.cs
+│   ├── SearchTimeComparison.cs
+│   └── SearchingComplexityAnalysis.md
+├── 04-Sorting-Algorithms/
+│   ├── BubbleSort.cs
+│   ├── MergeSort.cs
+│   ├── QuickSort.cs
+│   └── SortingPerformanceAnalysis.md
+├── 05-BigO-Notation/
+│   ├── BigOExamples.cs
+│   └── BigOExplanation.md
+├── 06-Data-Structures/
 │   ├── Arrays/
 │   │   └── ArraysBasics.cs
 │   ├── Dictionaries/
 │   │   └── DictionaryOperations.cs
 │   └── Strings/
 │       └── StringManipulation.cs
-├── 03-Sorting-Algorithms/
-│   ├── BubbleSort.cs
-│   ├── MergeSort.cs
-│   ├── QuickSort.cs
-│   └── SortingPerformanceAnalysis.md
-├── 04-Searching-Algorithms/
-│   ├── BinarySearch.cs
-│   ├── LinearSearch.cs
-│   ├── SearchTimeComparison.cs
-│   └── SearchingComplexityAnalysis.md
-├── 05-BigO-Notation/
-│   ├── BigOExamples.cs
-│   └── BigOExplanation.md
-├── 06-Algorithms/
-│   ├── DivideAndConquer/
-│   │   └── MergeSort.cs
-│   ├── DynamicProgramming/
-│   │   └── KnapsackProblem.cs
-│   └── Recursion/
-│       └── Fibonacci.cs
-└── 07-OOPs/
-    ├── ClassesAndObjects.cs
-    ├── InheritanceExample.cs
-    ├── OOP-Concepts.md
-    └── PolymorphismExample.cs
+├── 07-Algorithms/
+    ├── DivideAndConquer/
+    │   └── MergeSort.cs
+    ├── DynamicProgramming/
+    │   └── KnapsackProblem.cs
+    └── Recursion/
+        └── Fibonacci.cs
+
 ```
 
 ## Contents:
 
-### 1. Introduction to Programming
+### 01. Introduction to Programming
 #### a. BasicSyntax.cs
 - **Topics to Cover**:
   - Variables and Data Types (`int`, `double`, `string`, `bool`)
@@ -79,37 +80,63 @@ ProgrammingInCSharp/
 
 ---
 
-### 02. Data Structures
-#### a. Arrays/ArraysBasics.cs
+### 02. Object-Oriented Programming (OOP)
+#### a. ClassesAndObjects.cs
 - **Topics to Cover**:
-  - Array declaration, initialization, and access
-  - Single-dimensional and multi-dimensional arrays
-  - Jagged arrays
-  - Array traversal (for and foreach)
-  - Array methods (`Array.Sort()`, `Array.Reverse()`)
-- **Objective**: Introduce arrays and how to manipulate them in various ways.
+  - Defining classes and creating objects
+  - Fields, properties, methods, and constructors
+  - Object instantiation and method calls
+- **Objective**: Provide a comprehensive introduction to classes and objects in C#.
 
-#### b. Strings/StringManipulation.cs
+#### b. InheritanceExample.cs
 - **Topics to Cover**:
-  - String declaration and initialization
-  - Common string methods (`Substring()`, `Replace()`, `IndexOf()`, `Trim()`, etc.)
-  - String interpolation and concatenation
-  - String comparison (`CompareTo()`, `Equals()`)
-  - String immutability
-- **Objective**: Demonstrate how to manipulate strings in C# and explain string immutability.
+  - Inheritance in C# (base and derived classes)
+  - Method overriding
+  - `protected` access modifier
+- **Objective**: Teach inheritance, method overriding, and code reuse through inheritance.
 
-#### c. Dictionaries/DictionaryOperations.cs
+#### c. PolymorphismExample.cs
 - **Topics to Cover**:
-  - Dictionary declaration and initialization
-  - Adding, removing, and updating dictionary elements
-  - Key-based lookup (`TryGetValue()`)
-  - Iterating through dictionaries (`foreach`)
-  - Dictionary performance considerations
-- **Objective**: Provide a comprehensive introduction to dictionaries and their uses.
+  - Polymorphism in C#
+  - Method overloading and overriding
+  - Use of `virtual` and `override` keywords
+  - Dynamic (run-time) polymorphism using interfaces or base classes
+- **Objective**: Demonstrate polymorphism and its applications in making code flexible and reusable.
 
 ---
 
-### 3. Sorting Algorithms
+### 03. Searching Algorithms
+#### a. BinarySearch.cs
+- **Topics to Cover**:
+  - Binary Search algorithm (recursive and iterative versions)
+  - Pre-requisite: sorted array
+  - Time complexity analysis (`O(log n)`)
+- **Objective**: Demonstrate efficient searching in a sorted array using Binary Search.
+
+#### b. LinearSearch.cs
+- **Topics to Cover**:
+  - Linear Search algorithm
+  - Code implementation and use cases
+  - Time complexity (`O(n)`)
+- **Objective**: Provide a simple implementation of Linear Search, comparing it to Binary Search.
+
+#### c. SearchTimeComparison.cs
+- **Topics to Cover**:
+  - Compare search times: Linear Search, Binary Search, and Dictionary Search.
+  - Time measurement using `Stopwatch` class.
+  - Analyze time complexity differences and practical performance.
+- **Objective**: Demonstrate search time comparison for `O(n)`, `O(log n)`, and `O(1)` searches across data structures.
+
+#### d. SearchingComplexityAnalysis.md
+- **Content**:
+  - Compare the time complexity of Binary Search and Linear Search.
+  - Discuss when each algorithm is appropriate.
+  - Examples of real-world scenarios for each.
+- **Objective**: Analyze the performance of searching algorithms based on array properties.
+
+---
+
+### 04. Sorting Algorithms
 #### a. BubbleSort.cs
 - **Topics to Cover**:
   - Bubble Sort algorithm (step-by-step explanation)
@@ -141,38 +168,7 @@ ProgrammingInCSharp/
 
 ---
 
-### 4. Searching Algorithms
-#### a. BinarySearch.cs
-- **Topics to Cover**:
-  - Binary Search algorithm (recursive and iterative versions)
-  - Pre-requisite: sorted array
-  - Time complexity analysis (`O(log n)`)
-- **Objective**: Demonstrate efficient searching in a sorted array using Binary Search.
-
-#### b. LinearSearch.cs
-- **Topics to Cover**:
-  - Linear Search algorithm
-  - Code implementation and use cases
-  - Time complexity (`O(n)`)
-- **Objective**: Provide a simple implementation of Linear Search, comparing it to Binary Search.
-
-#### c. SearchTimeComparison.cs
-- **Topics to Cover**:
-  - Compare search times: Linear Search, Binary Search, and Dictionary Search.
-  - Time measurement using `Stopwatch` class.
-  - Analyze time complexity differences and practical performance.
-- **Objective**: Demonstrate search time comparison for `O(n)`, `O(log n)`, and `O(1)` searches across data structures.
-
-#### d. SearchingComplexityAnalysis.md
-- **Content**:
-  - Compare the time complexity of Binary Search and Linear Search.
-  - Discuss when each algorithm is appropriate.
-  - Examples of real-world scenarios for each.
-- **Objective**: Analyze the performance of searching algorithms based on array properties.
-
----
-
-### 5. Big O Notation
+### 05. Big O Notation
 #### a. BigOExplanation.md
 - **Content**:
   - Explanation of Big O notation
@@ -191,7 +187,37 @@ ProgrammingInCSharp/
 
 ---
 
-### 6. Common Algorithms
+### 06. Data Structures
+#### a. Arrays/ArraysBasics.cs
+- **Topics to Cover**:
+  - Array declaration, initialization, and access
+  - Single-dimensional and multi-dimensional arrays
+  - Jagged arrays
+  - Array traversal (for and foreach)
+  - Array methods (`Array.Sort()`, `Array.Reverse()`)
+- **Objective**: Introduce arrays and how to manipulate them in various ways.
+
+#### b. Strings/StringManipulation.cs
+- **Topics to Cover**:
+  - String declaration and initialization
+  - Common string methods (`Substring()`, `Replace()`, `IndexOf()`, `Trim()`, etc.)
+  - String interpolation and concatenation
+  - String comparison (`CompareTo()`, `Equals()`)
+  - String immutability
+- **Objective**: Demonstrate how to manipulate strings in C# and explain string immutability.
+
+#### c. Dictionaries/DictionaryOperations.cs
+- **Topics to Cover**:
+  - Dictionary declaration and initialization
+  - Adding, removing, and updating dictionary elements
+  - Key-based lookup (`TryGetValue()`)
+  - Iterating through dictionaries (`foreach`)
+  - Dictionary performance considerations
+- **Objective**: Provide a comprehensive introduction to dictionaries and their uses.
+
+---
+
+### 07. Common Algorithms
 #### a. Recursion/Fibonacci.cs
 - **Topics to Cover**:
   - Fibonacci sequence using recursion and iteration
@@ -214,29 +240,6 @@ ProgrammingInCSharp/
 
 ---
 
-### 7. Object-Oriented Programming (OOP)
-#### a. ClassesAndObjects.cs
-- **Topics to Cover**:
-  - Defining classes and creating objects
-  - Fields, properties, methods, and constructors
-  - Object instantiation and method calls
-- **Objective**: Provide a comprehensive introduction to classes and objects in C#.
-
-#### b. InheritanceExample.cs
-- **Topics to Cover**:
-  - Inheritance in C# (base and derived classes)
-  - Method overriding
-  - `protected` access modifier
-- **Objective**: Teach inheritance, method overriding, and code reuse through inheritance.
-
-#### c. PolymorphismExample.cs
-- **Topics to Cover**:
-  - Polymorphism in C#
-  - Method overloading and overriding
-  - Use of `virtual` and `override` keywords
-  - Dynamic (run-time) polymorphism using interfaces or base classes
-- **Objective**: Demonstrate polymorphism and its applications in making code flexible and reusable.
-
 ## Learning Path:
 
 The following path is designed to progressively enhance your understanding of C# from fundamental concepts to advanced programming techniques.
@@ -245,24 +248,28 @@ The following path is designed to progressively enhance your understanding of C#
    - **Introduction to Programming**:
      - **Basic Syntax**, **Control Structures**, and **Variables & Data Types** will establish a strong foundation for programming in C#.
 
-2. **Move to Data Structures**:
-   - Learn about **Arrays**, **Strings**, and **Dictionaries**.
+2. **Explore Object-Oriented Programming (OOP)**:
+   - **Classes and Objects**, **Inheritance**, and **Polymorphism** are key OOP principles.
+   - Learn to implement these concepts in C# to build modular and reusable code.
+
+3. **Move to Data Structures**:
+   - Start with **Arrays**
    - This section introduces common data structures and their manipulation, providing the tools needed for effective data handling.
 
-3. **Study Sorting and Searching Algorithms**:
+4. **Study Sorting and Searching Algorithms**:
    - Implement and compare common algorithms like **Bubble Sort**, **Quick Sort**, **Merge Sort**, and searching techniques like **Binary Search** and **Linear Search**.
    - The **Search Time Comparison** section will offer practical insights into real-world performance.
 
-4. **Understand Algorithm Complexity with Big O**:
+5. **Understand Algorithm Complexity with Big O**:
    - **Big O Notation** will help you understand the time and space complexities of algorithms.
    - Real-world examples will solidify your ability to evaluate algorithm performance.
 
-5. **Deepen your Knowledge of Advanced Algorithms**:
+6. **Move to Data Structures**:
+   - Learn about **Dictionaries**, **Strings**
+   
+7. **Deepen your Knowledge of Advanced Algorithms**:
    - Study **Recursion**, **Divide and Conquer** techniques like **Merge Sort**, and **Dynamic Programming** with the **Knapsack Problem**.
-
-6. **Explore Object-Oriented Programming (OOP)**:
-   - **Classes and Objects**, **Inheritance**, and **Polymorphism** are key OOP principles.
-   - Learn to implement these concepts in C# to build modular and reusable code.
+   
 
 This path will ensure you gradually develop from basic to advanced C# programming skills, helping you master the language through a structured approach.
 
