@@ -6,6 +6,9 @@ namespace DataStructures.Arrays
     {
         public static void RunExample()
         {
+            // 0. Creating an Empty Array
+            CreateArray();
+
             // 1. Array Declaration, Initialization, and Access
             ArrayDeclarationInitializationAccess();
 
@@ -22,6 +25,35 @@ namespace DataStructures.Arrays
             ArrayMethodsExample();
 
             Console.WriteLine("\n-- Arrays Basics Examples Completed --");
+        }
+
+        // 0. Creating an Empty Array
+        private static void CreateArray()
+        {
+            Console.WriteLine("\n-- Creating an Empty Array --");
+
+            // An empty array has a fixed size but no values assigned yet.
+            // All elements default to the type's default value (0 for int, null for string, etc.)
+
+            // Creating an empty int array with 5 slots
+            int[] emptyIntArray = new int[5];
+            Console.WriteLine("Empty int array (5 elements, all default to 0):");
+            foreach (int value in emptyIntArray)
+            {
+                Console.Write(value + " ");
+            }
+            Console.WriteLine();
+
+            // Creating an empty string array with 3 slots
+            string[] emptyStringArray = new string[3];
+            Console.WriteLine("\nEmpty string array (3 elements, all default to null):");
+            foreach (string value in emptyStringArray)
+            {
+                Console.WriteLine(value == null ? "null" : value);
+            }
+
+            // You can check the length of an empty array
+            Console.WriteLine($"\nLength of emptyIntArray: {emptyIntArray.Length}");
         }
 
         // 1. Array Declaration, Initialization, and Access
